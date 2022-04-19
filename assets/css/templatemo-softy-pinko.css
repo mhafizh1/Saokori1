@@ -42,7 +42,24 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
 
+.my-float {
+  margin-top: 16px;
+}
 .clearfix:after {
   content: ".";
   display: block;
@@ -325,14 +342,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #000000;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #000000;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -343,7 +360,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #ff589e;
+  background-color: #816529;
 }
 
 button.main-button {
@@ -769,7 +786,7 @@ features
 }
 
 .features-small-item:hover .icon {
-  background-color: #ff589e;
+  background-color: #ffffff;
 }
 
 .features-small-item .icon {
@@ -783,7 +800,7 @@ features
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #8261ee;
+  background: #000000;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -857,7 +874,7 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  background-image: url(../images/bg3.png);
   z-index: 2;
   top: -20%;
   left: -20%;
