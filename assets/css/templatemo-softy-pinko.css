@@ -42,6 +42,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+
 .float {
   position: fixed;
   width: 60px;
@@ -56,7 +57,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
 }
-
+.container-lg text-center{
+  background-color: #965656;
+}
 .my-float {
   margin-top: 16px;
 }
@@ -143,6 +146,11 @@ body {
   position: relative;
   padding-top: 100px;
   padding-bottom: 80px;
+  
+}
+
+.section .container-lg text-centre{
+  background: #000000;
 }
 
 .section.colored {
@@ -176,16 +184,24 @@ body {
 }
 
 .center-heading .section-title {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 28px;
   color: #1e1e1e;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.5px;
   line-height: 38px;
   margin-bottom: 20px;
 }
 
 .center-heading.colored .section-title {
   color: #ffffff;
+}
+.center-heading .judul{
+  font-weight: 600;
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
 }
 
 .center-text {
@@ -207,6 +223,11 @@ body {
   color: #777;
   margin-bottom: 30px;
 }
+.center-text .bawah p{
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
 
 .left-text {
   font-weight: 400;
@@ -224,7 +245,7 @@ body {
   margin-bottom: 30px;
 }
 
-.left-text p.dark {
+.left-text p.rrk {
   color: #3B566E;
 }
 
@@ -852,6 +873,10 @@ features
   }
 }
 
+/*
+Count US
+*/
+
 /* 
 ---------------------------------------------
 parallax & home seperator
@@ -908,8 +933,8 @@ parallax & home seperator
 
 .mini .mini-content .info h1 {
   color: #fff;
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 800;
+  font-size: 58px;
   letter-spacing: 0.25px;
   margin-bottom: 30px;
 }
@@ -970,6 +995,7 @@ parallax & home seperator
 
 .mini .mini-content .mini-box span {
   display: block;
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   color: #777;
@@ -1330,6 +1356,11 @@ pricing
 blog
 --------------------------------------------- 
 */
+
+.section .katak{
+  background-image: url(../images/bg3.png);
+  padding-top: 50px;
+}
 .blog-post-thumb {
   text-align: center;
   margin-bottom: 30px;
@@ -1356,9 +1387,9 @@ blog
 }
 
 .blog-post-thumb h3 a {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 18px;
-  color: #1e1e1e;
+  color: #ffffff;
   letter-spacing: 0.25px;
   line-height: 26px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1368,13 +1399,13 @@ blog
 }
 
 .blog-post-thumb h3 a:hover {
-  color: #ff589e;
+  color: #c57f15;
 }
 
 .blog-post-thumb .text {
   font-weight: 400;
   font-size: 13px;
-  color: #777;
+  color: rgb(255, 255, 255);
   letter-spacing: 0.26px;
   line-height: 26px;
   margin-bottom: 15px;
@@ -1602,4 +1633,38 @@ preloader
   100% {
     opacity: 0;
   }
+  
+}
+@keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
+  }
+
+  @media (max-width: 992px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 18px;
+      padding: 13px;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 12px;
+      padding: 7px;
+    }
+  }
+  
+  @media (max-width: 360px){
+    .slides .navigation .prev, .slides .navigation .next{
+      font-size: 11px;
+      padding: 6px;
+    }
+  
 }
