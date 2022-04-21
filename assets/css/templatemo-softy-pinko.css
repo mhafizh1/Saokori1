@@ -446,6 +446,11 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  position: relative;
+  bottom: 14px;
+  width: 189px;
+  left: 12px;
+  
 }
 
 .header-area .main-nav .nav {
@@ -755,6 +760,7 @@ welcome
 @media (max-width: 765px) {
   .welcome-area {
     margin-bottom: 100px;
+    background-position: 80% 20%;
   }
   .welcome-area .header-text {
     top: 50% !important;
@@ -1359,6 +1365,8 @@ blog
 
 .section .katak{
   background-image: url(../images/bg3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 50px;
 }
 .blog-post-thumb {
