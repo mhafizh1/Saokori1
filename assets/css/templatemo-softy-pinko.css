@@ -1011,7 +1011,7 @@ parallax & home seperator
 
 .mini .mini-content .mini-box strong {
   display: block;
-  font-weight: 400;
+  font-weight: 600px;
   font-size: 17px;
   color: #1e1e1e;
   letter-spacing: 0.25px;
@@ -1115,6 +1115,7 @@ parallax & home seperator
   font-size: 17px;
   letter-spacing: 0.25px;
 }
+
 
 @media (max-width: 991px) {
   .parallax {
